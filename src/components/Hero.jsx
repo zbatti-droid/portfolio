@@ -1,4 +1,5 @@
-import { ShieldCheck } from 'lucide-react';
+﻿import { ShieldCheck } from 'lucide-react';
+import photo from '../assets/zakaria-photo.png';
 
 function Hero() {
   return (
@@ -22,7 +23,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* البطاقة - العنصر المميز ديال التصميم */}
       <div className="hero-card">
         <div className="verify-card">
           <div className="verify-card-header">
@@ -30,8 +30,13 @@ function Hero() {
             <span>PROFIL VÉRIFIÉ</span>
           </div>
 
-          <h3 className="verify-card-name">Zakaria Batti</h3>
-          <p className="verify-card-role">React · Node.js · PostgreSQL</p>
+          <div className="verify-card-top">
+            <img src={photo} alt="Zakaria Batti" className="verify-card-photo" />
+            <div>
+              <h3 className="verify-card-name">Zakaria Batti</h3>
+              <p className="verify-card-role">React · Node.js · PostgreSQL</p>
+            </div>
+          </div>
 
           <div className="verify-card-row">
             <span className="verify-card-label">Formation</span>
