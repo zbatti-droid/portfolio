@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* الألوان - الخلفيات */
+  --bg-primary: #111827;      /* أزرق حبر، ماشي أسود صافي */
+  --bg-surface: #1A2333;
+  --bg-surface-hover: #212C40;
+  --border-color: #2A3547;
+
+  /* النصوص */
+  --text-primary: #EDE9E0;    /* أبيض دافئ، ماشي أبيض بارد */
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+
+  /* عنصر التمييز الوحيد - ذهبي/نحاسي (رمز الختم الرسمي) */
+  --accent-gold: #C9973E;
+  --accent-gold-light: #DDB768;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --container-width: 1120px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
